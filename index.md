@@ -1,23 +1,19 @@
-**中文字符识别**
-==
+# Week 3
 
-组员： 蔡玮 陈利 程伟 王新旺
+------
 
- ---
- 
-## **Introduction**
+检索有关字符识别的方法资料，并尝试理清其实现方案。学习其中方法并找出可借鉴性。
+其中有一篇名为《手写数字字符识别》的文章，和所选课题有比较相似的地方，于是拿过来学习理解，如下：
 
-Historically, Chinese character recognition has been extensively studied . In the mobile internet era, the research on the robust recognition of handwritten Chinese characters in an unconstraint manner has become increasingly popular due to the application demand. In terms of the task complexity, the offline handwritten Chinese text recognition is the most challenging task due to the lack of trajectory information and the free writing style, which is also the topic of this study.
+> * 项目名称：手写字符识别
+> * 主流程如图1
+> * 详细流程如图2
 
----
-
-## **reference paper:**
-1、[A CNN Based Scene Chinese Text Recognition Algorithm With Synthetic Data Engine](https://arxiv.org/pdf/1604.01891.pdf)
-2、[Neural Network Classifiers for Optical Chinese Character Recognition](http://www.cs.cmu.edu/afs/cs.cmu.edu/project/pcvision/www/papers/chinese/final.html)
-
----
-
-### week3
-1.制作网站
-
-2.查找文献
+```flow
+st=>start: Start:>http://www.google.com[blank]
+e=>end:>http://www.google.com
+op1=>operation: 预处理
+op2=>operation: 特征提取
+op3=>operation: 分类识别
+st->op1->op2->op3->e
+```
